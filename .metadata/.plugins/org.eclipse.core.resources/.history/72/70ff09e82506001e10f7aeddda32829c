@@ -1,0 +1,27 @@
+package br.com.projeto.controller;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ExecutarController {
+	@GetMapping("/primeiro")
+	public List<String> primeiro(){
+		
+		String[] strArray = {"Delhi","Mumbai","Kolkata","Chennai"};
+		List<String> mylist = Arrays.asList(strArray);
+		return mylist;
+		
+}
+	@GetMapping("/segunda")
+	public List<String> segundo(){
+		List<String> list 
+		list.add("Mango");
+		list.add("");
+		list.add("");
+		list.add("");
+
+	}
